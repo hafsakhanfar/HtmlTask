@@ -21,38 +21,38 @@
     <h1>SignUP</h1>
 
     
-    <main>
-    <form action="https://formspree.io" method="post">
+   
+    <form action="https://formspree.io/f/mvoleoww" method="post">
         <p>
             <label for="FName">full Name </label>
         </p>
-        <input type="text" id="FName" placeholder="firstName LastName" tabindex="1"
+        <input type="text" id="FName" name="fullname" placeholder="firstName LastName" tabindex="1"
         pattern="^[a-zA-Z]+\s?[a-zA-Z]+$" required>
         <p> 
             <label for="email">Enter your emial </label>
         </p>
         
-        <input type="email" id="email" placeholder="yourname@example.com" tabindex="2" required>
+        <input type="email" id="email" name="email" placeholder="yourname@example.com" tabindex="2" required>
 
         <p>
             <Label for="password">your password</Label>
         </p>
-            <input type="password" id="password" min="8" tabindex="3" placeholder="at least 8 char" >
+            <input type="password" id="password" name="password" min="8" tabindex="3" placeholder="at least 8 char" >
       
         <p>
          
             <label for="phone">Enter your phone number </label>
         </p>
-        <input type="text" id="phone" placeholder="570-995564523" tabindex="4" pattern="[0-9]{3}[-][0-9]{9}" required>
+        <input type="text" id="phone"  name="phoneNumber" placeholder="570-995564523" tabindex="4" pattern="[0-9]{3}[-][0-9]{9}" required>
 
         <p>
             <label for="BD">BirthDate </label>
         </p>
-        <input type="date" id="BD" tabindex="5" placeholder="your BirthDate">
+        <input type="date" id="BD" name="birthDate" tabindex="5" placeholder="your BirthDate">
         <p>
             <label for="country">country name </label>
         </p>
-        <select id="country" tabindex="6">
+        <select id="country" name="Country" tabindex="6">
             <optgroup label="MENA country">
                 <option value="Algeria">Algeria</option>
                 <option value="Armenia">Armenia</option>
@@ -93,7 +93,7 @@
 
         <input type="submit" tabindex="10" name="submit">
     </form>
-</main>
+
 </body>
 
 </html>
